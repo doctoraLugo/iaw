@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAW | Mi portafolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #263247;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            color: #cbd5e1;
+        }
+
+        nav {
+            background: #1e3a8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .bienvenida {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 12px #00000010;
+        }
+
+        .actividades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .actividad {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #00000010;
+            transition: transform 0.2s;
+        }
+
+        .actividad:hover {
+            transform: translateY(-5px);
+        }
+
+        .actividad h3 {
+            color: #1e3a8a;
+            margin-bottom: 12px;
+        }
+
+        .actividad p {
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+
+        .actividad a {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 10px 16px;
+            border-radius: 7px;
+            text-decoration: none;
+        }
+
+        .actividad a:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi portafolio digital</h1>
+        <p>Introducción al Ambiente Web | IAW</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#actividades">Actividades</a>
+        <a href="#contacto">Información</a>
+    </nav>
+
+    <main>
+
+        <section class="bienvenida" id="inicio">
+            <h2>¡Bienvenido a mi espacio web!</h2>
+            <br>
+            <p>
+                Este sitio reúne mis actividades y proyectos realizados
+                durante la asignatura de Introducción al Ambiente Web.
+                Aquí podrás consultar los trabajos desarrollados
+                y conocer mi aprendizaje en el diseño y desarrollo web.
+            </p>
+        </section>
+
+        <section id="actividades">
+            <h2>Mis actividades</h2>
+            <br>
+
+            <div class="actividades">
+
+                <article class="actividad">
+                    <h3>Actividad 1</h3>
+                    <p>Primera actividad de la asignatura.</p>
+                    <a href="actividad1.html">Ver actividad</a>
+                </article>
+
+                <article class="actividad">
+                    <h3>Actividad 2</h3>
+                    <p>Segunda actividad de la asignatura.</p>
+                    <a href="actividad2.html">Ver actividad</a>
+                </article>
+
+                <article class="actividad">
+                    <h3>Actividad 3</h3>
+                    <p>Tercera actividad de la asignatura.</p>
+                    <a href="actividad3.html">Ver actividad</a>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        <p>Portafolio académico | IAW</p>
+        <p>Desarrollado como parte de mi formación académica.</p>
+    </footer>
+
+</body>
+</html>
